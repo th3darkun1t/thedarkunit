@@ -3,7 +3,7 @@ const CONFIG = {
   profile: {
     name: "0perator",
     image: "/tduavatar.png", 
-    role: "",
+    role: "spokesperson",
     bio: "From the Depths of Darkness",
     email: "0perator@thedarkunit.com",
     linkedin: "the-dark-unit",
