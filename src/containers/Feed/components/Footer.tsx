@@ -15,8 +15,8 @@ const Footer: React.FC<Props> = ({ className }) => {
   return (
     <div className={className}>
       <a
-        href={``}
-        target="_blank"
+        href={`https://thedarkunit.com`}
+        target="_self"
         className="text-gray-500 text-sm mt-3"
         rel="noreferrer"
       >
