@@ -1,6 +1,13 @@
 import { CONFIG } from "site.config"
 import Image from "next/image"
 import React from "react"
+import {
+  AiOutlineInstagram,
+  AiOutlineTwitter,
+  AiOutlineGithub,
+  AiOutlineMail,
+  AiFillLinkedin,
+} from "react-icons/ai"
 
 type Props = {
   className?: string
@@ -29,27 +36,34 @@ const MobileProfileCard: React.FC<Props> = () => {
             <div className="text-sm">{CONFIG.profile.bio}</div>
           </div>
         </div>
-        {/* <div className="flex">
-          {CONFIG.profile.github && (
+
+      </div>
+	  <div className="p-0 rounded-2xl bg-white dark:bg-zinc-700 mb-6">
+	  <div className="h-fit dark:text-white">
+        { <div className="flex">
+
+          {CONFIG.profile.twitter && (
             <a
-              href={`https://github.com/${CONFIG.profile.github}`}
+              href={`https://www.twitter.com/${CONFIG.profile.twitter}`}
               rel="noreferrer"
               target="_blank"
-              className="p-3 dark:hover:bg-zinc-700 rounded-2xl cursor-pointer text-gray-500 dark:text-white "
+              className="  overflow-hidden p-3 dark:hover:bg-zinc-700 rounded-2xl cursor-pointer text-gray-500 dark:text-white"
             >
-              <AiOutlineGithub className="text-2xl" />
+              <AiOutlineTwitter className="text-2xl flex-shrink-0" />
             </a>
           )}
-          {CONFIG.profile.instagram && (
+		  
+		  {CONFIG.profile.linkedin && (
             <a
-              href={`https://www.instagram.com/${CONFIG.profile.instagram}`}
+              href={`https://www.linkedin.com/company/${CONFIG.profile.linkedin}`}
               rel="noreferrer"
               target="_blank"
-              className="p-3 dark:hover:bg-zinc-700 rounded-2xl cursor-pointer text-gray-500 dark:text-white"
+              className="  overflow-hidden p-3 dark:hover:bg-zinc-700 rounded-2xl cursor-pointer text-gray-500 dark:text-white"
             >
-              <AiOutlineInstagram className="text-2xl" />
+              <AiFillLinkedin className="text-2xl flex-shrink-0" />
             </a>
           )}
+		  
           {CONFIG.profile.email && (
             <a
               href={`mailto:${CONFIG.profile.email}`}
@@ -60,18 +74,11 @@ const MobileProfileCard: React.FC<Props> = () => {
               <AiOutlineMail className="text-2xl flex-shrink-0" />
             </a>
           )}
-          {CONFIG.profile.linkedin && (
-            <a
-              href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
-              rel="noreferrer"
-              target="_blank"
-              className="  overflow-hidden p-3 dark:hover:bg-zinc-700 rounded-2xl cursor-pointer text-gray-500 dark:text-white"
-            >
-              <AiFillLinkedin className="text-2xl flex-shrink-0" />
-            </a>
-          )}
-        </div> */}
-      </div>
+
+
+        </div> }
+		</div>
+		</div>
     </div>
   )
 }
