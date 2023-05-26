@@ -5,10 +5,10 @@ const CONFIG = {
     image: "/tduavatar.png", 
     role: "",
     bio: "From the Depths of Darkness",
-    email: "th3darkun1t@gmail.com",
-    linkedin: "",
+    email: "0perator@thedarkunit.com",
+    linkedin: "the-dark-unit",
     twitter: "th3darkun1t",
-    github: "th3darkun1t",
+    github: "",
     instagram: "",
   },
   
