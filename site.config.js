@@ -32,7 +32,7 @@ const CONFIG = {
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "", // The link to generate OG image, don't end with a slash
   seo: {
-    keywords: ["Malware", "ThreatIntel", "Blog"],
+    keywords: ["malware", "threatintel", "infosec"],
   },
 
   // notion configuration (required)
